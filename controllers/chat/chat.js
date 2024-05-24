@@ -35,13 +35,13 @@ router.post("/", authMiddleware, limiter, async (req, res) => {
     // const ip =
     //     req.ip || req.headers["x-forwarded-for"] || req.connection.remoteAddress;
 
-    const apiKey = process.env.OPENAI_API_KEY || 'sk-proj-gPVqFmWSBbNYpnaB8StWT3BlbkFJbclFQwbCudY3QdnurWsk';
+    // const apiKey = process.env.OPENAI_API_KEY || ';
     const model = process.env.GPT_MODEL_NAME || 'gpt-3.5-turbo';
 
     const options = {
         method: "POST",
         headers: {
-            Authorization: `Bearer ${apiKey}`,
+            Authorization: `Bearer sk-proj-gPVqFmWSBbNYpnaB8StWT3BlbkFJbclFQwbCudY3QdnurWsk`,
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
