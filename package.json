@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": " npm run swagger-autogen && nodemon index.js ",
+    "start": "npm run swagger-autogen && nodemon index.js ",
     "swagger-autogen": "node swagger.js",
     "test": "mocha test/**/*.test.js --timeout 30000"
   },
