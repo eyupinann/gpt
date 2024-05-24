@@ -41,7 +41,7 @@ router.post("/", authMiddleware, limiter, async (req, res) => {
     const options = {
         method: "POST",
         headers: {
-            Authorization: `Bearer sk-proj-gPVqFmWSBbNYpnaB8StWT3BlbkFJbclFQwbCudY3QdnurWsk`,
+            Authorization: `Bearer `,
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
